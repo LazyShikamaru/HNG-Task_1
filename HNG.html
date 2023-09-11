@@ -19,6 +19,14 @@
             background-image: linear-gradient(135deg,#444cf7 25%, transparent 50%),linear-gradient(225deg, #f2f2f2 25%,transparent 25%),linear-gradient(45deg,#444cf7 25%, transparent 50%),linear-gradient(315deg, #f2f2f2 25%, #e5e5f7 25%);
         }
 
+        .container{
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
         .box{
             background-color: #f2f2f2;
             border: 1px solid #ccc;
@@ -41,9 +49,7 @@
             margin-bottom: 40px;
         }
 
-        p{
-            color: #333;
-        }
+        
 
         img{
             width: 150px;
@@ -81,39 +87,40 @@
     </style>
 </head>
 <body>
-    <h1>My Profile</h1>
+    <h1>Stage 1</h1>
 
-    
+    <div class="container">
     <div class="box">
         
-        <img src="Profile-pic.jpeg" alt="Lazy_Joshua" data-testid="slackdisplayimage">
+        <img src="Profile-pic.jpeg" alt="Lazy_Joshua" data-testid="slackDisplayImage">
     </div>
     
     <div class="box">
-        <h2>Lazy_Joshua</h2>
-        <p data-testid="Lazy_Joshua"></p>
+    <h3 data-testid="slackUserName">Lazy_Joshua</h3> 
+        
     </div>
 
     <div class="box">
         <h2>Track:</h2>
-        <p data-testid="mytrack">Frontend</p>
+        <h3 data-testid="myTrack">Frontend</h3>
     </div>
 
     <div class="box">
-        <h2>Current Day of the Week</h2>
-        <p data-testid="currentdayoftheweek"> </p>
+        <h3 data-testid="currentDayOfTheWeek">Current Day of the Week:</h3>
+        
     </div>
 
     <div class="box">
-        <h2>Current UTC Time:</h2>
-        <p data-testid="currentUTCTime"></p>
+        <h3 data-testid="currentUTCTime">Current UTC Time:</h3>
+        
     </div>
 
 
     <div class="box">
         <h2>GitHub Url:</h2>
-        <a href="www.github.com/LazyShikamaru" data-testid="githuburl">Click here for the source code</a>
+        <a href="www.github.com/LazyShikamaru/HNG-Task-1" data-testid="githubURL">Click here for the source code</a>
     </div>
+</div>
 
     <script src="script.js"></script>
 </body>
