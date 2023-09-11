@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0.8;
+            background-image: linear-gradient(135deg,#444cf7 25%, transparent 50%),linear-gradient(225deg, #f2f2f2 25%,transparent 25%),linear-gradient(45deg,#444cf7 25%, transparent 50%),linear-gradient(315deg, #f2f2f2 25%, #e5e5f7 25%);
+        }
+
+        .box{
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1{
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        h2{
+            color: rgb(54, 52, 46);
+            margin-bottom: 10px;
+        }
+
+        div{
+            margin-bottom: 40px;
+        }
+
+        p{
+            color: #333;
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .box h2{
+            color:#333;
+        }
+
+        .box p{
+            color: #666;
+        }
+
+        .box img{
+            width:150px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        a{
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Profile</h1>
+
+    
+    <div class="box">
+        
+        <img src="Profile-pic.jpeg" alt="Lazy_Joshua" data-testid="slackdisplayimage">
+    </div>
+    
+    <div class="box">
+        <h2>Lazy_Joshua</h2>
+        <p data-testid="Lazy_Joshua"></p>
+    </div>
+
+    <div class="box">
+        <h2>Track:</h2>
+        <p data-testid="mytrack">Frontend</p>
+    </div>
+
+    <div class="box">
+        <h2>Current Day of the Week</h2>
+        <p data-testid="currentdayoftheweek"> </p>
+    </div>
+
+    <div class="box">
+        <h2>Current UTC Time:</h2>
+        <p data-testid="currentUTCTime"></p>
+    </div>
+
+
+    <div class="box">
+        <h2>GitHub Url:</h2>
+        <a href="www.github.com/LazyShikamaru" data-testid="githuburl">Click here for the source code</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
